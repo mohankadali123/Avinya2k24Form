@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teams Data</title>
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+    </style>
+</head>
+<body>
+    <h1>Team 4 Data</h1>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Name 1</th>
+            <th>Roll No 1</th>
+            <th>Name 2</th>
+            <th>Roll No 2</th>
+            <th>Name 3</th>
+            <th>Roll No 3</th>
+            <th>Name 4</th>
+            <th>Roll No 4</th>
+        </tr>
+        {% for team in team4_data %}
+        <tr>
+            <td>{{ team.no }}</td>
+            <td>{{ team.name1 }}</td>
+            <td>{{ team.rollno1 }}</td>
+            <td>{{ team.name2 }}</td>
+            <td>{{ team.rollno2 }}</td>
+            <td>{{ team.name3 }}</td>
+            <td>{{ team.rollno3 }}</td>
+            <td>{{ team.name4 }}</td>
+            <td>{{ team.rollno4 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h1>Team 5 Data</h1>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Name 1</th>
+            <th>Roll No 1</th>
+            <th>Name 2</th>
+            <th>Roll No 2</th>
+            <th>Name 3</th>
+            <th>Roll No 3</th>
+            <th>Name 4</th>
+            <th>Roll No 4</th>
+            <th>Name 5</th>
+            <th>Roll No 5</th>
+        </tr>
+        {% for team in team5_data %}
+        <tr>
+            <td>{{ team.no }}</td>
+            <td>{{ team.name1 }}</td>
+            <td>{{ team.rollno1 }}</td>
+            <td>{{ team.name2 }}</td>
+            <td>{{ team.rollno2 }}</td>
+            <td>{{ team.name3 }}</td>
+            <td>{{ team.rollno3 }}</td>
+            <td>{{ team.name4 }}</td>
+            <td>{{ team.rollno4 }}</td>
+            <td>{{ team.name5 }}</td>
+            <td>{{ team.rollno5 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
